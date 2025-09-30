@@ -43,7 +43,7 @@ export const DashboardPage: React.FC = () => {
                 <div className="flex items-center space-x-2">
                   <User className="h-5 w-5 text-gray-400" />
                   <span className="text-sm text-gray-700">
-                    {profile?.artist_name || user?.email || 'User'}
+                    {profile?.display_name || user?.email || 'User'}
                   </span>
                 </div>
               </div>
@@ -83,7 +83,7 @@ export const DashboardPage: React.FC = () => {
         {/* Welcome section */}
         <div className="bg-white rounded-lg shadow p-6 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
-            Welcome back, {profile?.artist_name || 'Artist'}!
+            Welcome back, {profile?.display_name || 'Artist'}!
           </h2>
           <p className="text-lg text-gray-600">
             Ready to connect with your audience and receive tips for your performances.
